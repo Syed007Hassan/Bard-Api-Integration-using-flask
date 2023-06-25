@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'BardApiIntegration'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1A61CBF12D114E358FBBDE8B9DE51721 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F76DB480BB654402808E2FFFC94B9A3A }}
