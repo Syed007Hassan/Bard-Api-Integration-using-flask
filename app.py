@@ -1,12 +1,14 @@
 import os
 
-from flask import Flask, request, jsonify
+from flask import Flask,jsonify
 
 from bardapi import Bard
 
 from flask_cors import CORS
+from dotenv import load_dotenv
 
-
+# Load environment variables from .env file
+load_dotenv()
 
 
 
@@ -20,9 +22,13 @@ CORS(app)
 
 # Get the API key from the environment variable
 
-api_key = 'XQimvVD1RUeYIhVVJKDM-oilymZHrWdzXIuwZjiTdcxuwYFZ1qNgE7MDBvgMwrEykrp0XQ.'
+api_key = 'XwimvVXSuxm0jM1QOMozoS7DEgmkSCX6m0R9QgLJY9sDwzbPWLA2XHstCL3LDVCBp9W6sg.'
 
 # api_key = os.environ.get('BARD_API_KEY')
+
+bard = Bard()
+
+
 
 
 
@@ -117,7 +123,7 @@ def create_response_controller(prompt):
 
 if __name__ == '__main__':
 
-    # Initialize the Bard session
+    print("Server running")
 
-    bard = Bard(api_key)
-    app.run(host='0.0.0.0', port=8000)
+    app.run(debug=True, port=os.getenv("PORT", default=3000))
+
