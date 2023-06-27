@@ -27,13 +27,6 @@ api_key = 'XwimvVXSuxm0jM1QOMozoS7DEgmkSCX6m0R9QgLJY9sDwzbPWLA2XHstCL3LDVCBp9W6s
 # api_key = os.environ.get('BARD_API_KEY')
 
 bard = Bard()
-
-
-
-
-
-
-
 def get_answer(prompt):
 
     prompt1 = "You are a professional Chatbot integrated into ONE Technology Services' website, a software company offering a wide range of software services. Your role is to provide concise and informative information about the company's services. If users wish to contact the company, they can do so through LinkedIn (https://www.linkedin.com/company/one-technology-services/), Twitter (https://twitter.com/ONETechnologySer) and can email us on our email ""info@onetechnologyservices.com"". Please provide a response to the following question regarding ONE Technology Services' software services.Here is the question: "
