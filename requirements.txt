@@ -1,4 +1,0 @@
-Flask==2.3.2
-Flask-Cors==3.0.10
-bardapi==0.1.18
-python-dotenv==1.0.0
